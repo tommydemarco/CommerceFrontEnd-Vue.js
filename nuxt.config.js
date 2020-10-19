@@ -9,12 +9,22 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js',
+        integrity: 'sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj',
+        crossorigin: 'anonymus'},
+      {src: 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js',
+        integrity: 'sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx',
+        crossorigin: 'anonymus'}
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    
+    '@/assets/css/bootstrap.css',
+    '@/assets/css/ui.css',
+    '@/assets/css/responsive.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
