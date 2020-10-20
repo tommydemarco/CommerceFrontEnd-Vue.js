@@ -1,7 +1,9 @@
 .mobile-block {
   display: none;
 }
-
+body {
+  background: #ecedf0;
+}
 @media (max-width: 1200px) {
   /* tablet devices */
 }

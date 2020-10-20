@@ -1,4 +1,27 @@
 /*global color variables*/
 $dgrey: #222f3e;
+$ngrey: #3e4752;
 $red: #EA2027;
+$dred: #db1118;
 $lgrey: #ecedf0;
+
+/*global styles*/
+.btn {
+    border-radius:0px;
+    &-red {
+        background:$dred;
+        color:white;
+        border:none;
+    }
+    &-grey {
+        background:$dgrey; 
+        color:white;
+        border:none;
+    }
+    &-grey:hover {
+        background:$ngrey; 
+    }
+    &-red:hover {
+        background:$red; 
+    }
+}

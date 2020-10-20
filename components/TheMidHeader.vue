@@ -4,32 +4,26 @@
       <div class="row align-items-center">
         <div class="col-lg-3 col-4">
           <a href="#" class="brand-wrap">
-            <img class="logo" src="/assets/images/logo.png" />
+            YourCommerceNow
           </a>
           <!-- brand-wrap.// -->
         </div>
         <div class="col-lg-6 col-sm-12 order-3 order-lg-2">
           <form action="#" class="search">
             <div class="input-group w-100">
-              <select class="custom-select" name="category_name">
-                <option value="">All type</option>
-                <option value="codex">Special</option>
-                <option value="comments">Only best</option>
-                <option value="content">Latest</option>
-              </select>
-              <input
-                type="text"
-                class="form-control"
-                style="width: 60%"
-                placeholder="Search"
-              />
-
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="submit">
-                  <i class="fa fa-search"></i>
-                </button>
-              </div>
-            </div>
+						<select class="custom-select border-right"  name="category_name">
+								<option value="">All type</option><option value="codex">Special</option>
+								<option value="comments">Only best</option>
+								<option value="content">Latest</option>
+						</select>
+					    <input type="text" class="form-control" placeholder="Search">
+					    
+					    <div class="input-group-append">
+					      <button class="btn btn-grey" type="submit">
+					        <i class="fa fa-search"></i> Search
+					      </button>
+					    </div>
+				    </div>
           </form>
           <!-- search-wrap .end// -->
         </div>
@@ -61,10 +55,18 @@
 
 <style scoped lang="scss">
 @import '@/assets/scss/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
 
+.brand-wrap {
+  font-family: 'Norican', cursive;
+  font-size:35px;
+  color: $dgrey;
+}
 .header-main {
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top:25px;
+  padding-bottom:25px;
+  background:white;
+  border-top:3px solid $dred;
 }
 .aside {
   padding-top:8px;

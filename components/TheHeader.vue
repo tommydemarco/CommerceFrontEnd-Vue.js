@@ -1,10 +1,8 @@
 <template>
   <header class="section-header">
-
-    <the-upper-header></the-upper-header>
     <the-mid-header></the-mid-header>
 
-    <nav class="navbar navbar-main navbar-expand-lg border-bottom">
+    <nav class="navbar navbar-main navbar-expand-lg">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -38,7 +36,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Fitness sport</a>
             </li>
-            <li class="nav-item dropdown is-active">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="http://example.com"
@@ -57,6 +55,15 @@
               </div>
             </li>
           </ul>
+          <!-- favorites -->
+          <div class="widget-header favorites align-right">
+						<a href="#" class="widget-view">
+							<div class="icon-area">
+								<i class="fa fa-heart"></i>
+								<span class="notify">3</span>
+							</div>
+						</a>
+					</div>
         </div>
       </div>
     </nav>
@@ -65,12 +72,10 @@
 </template>
 
 <script>
-import TheUpperHeader from "@/components/TheUpperHeader";
 import TheMidHeader from "@/components/TheMidHeader";
 
 export default {
   components: {
-    TheUpperHeader,
     TheMidHeader,
   },
 };
@@ -80,7 +85,7 @@ export default {
 @import '@/assets/scss/variables.scss';
 
 .navbar.navbar-expand-lg {
-    background: $red;
+    background: $dred;
     padding-top:15px;
     padding-bottom:15px;
 }
@@ -89,7 +94,10 @@ export default {
 }
 .dropdown-menu a.dropdown-item {
     color:$dgrey;
-
+}
+.favorites i {
+  color:white;
+  font-size: 25px;
 }
 
 </style>
