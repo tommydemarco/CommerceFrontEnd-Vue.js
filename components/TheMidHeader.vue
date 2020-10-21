@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-3 col-4">
-          <a href="#" class="brand-wrap">
+          <nuxt-link to="/" class="brand-wrap">
             YourCommerceNow
-          </a>
+          </nuxt-link>
           <!-- brand-wrap.// -->
         </div>
         <div class="col-lg-6 col-sm-12 order-3 order-lg-2">
@@ -36,8 +36,8 @@
                   <i class="icon-xs bg-red rounded-circle fa fa-check text-white"></i>
                 </div>
                 <div class="info">
-                  <small class="text-muted">Choose here</small>
-                  <p>Purchase on Amazon</p>
+                  <small class="text-muted">Choose the product here</small>
+                  <p>Purchase safely on Amazon</p>
                 </div>
               </div>
             </div>

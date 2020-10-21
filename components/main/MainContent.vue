@@ -1,7 +1,6 @@
 <template>
 
     <main>
-
         <header>
             <div class="container">
                 <div class="row initial-p text-center py-5">
@@ -21,7 +20,7 @@
                 </aside>
 
                 <!-- products -->
-                <section :class="'col-md-' + (aside ? '9' : '12') + ' pt-2'">
+                <section :class="'col-md-' + mainDivClass + ' pt-2'">
                     <div class="row">
                         <slot name="content"></slot>
                     </div>
@@ -51,6 +50,21 @@ export default {
         aside: {
             type: Boolean,
             default:false
+        },
+        half: {
+           type: Boolean,
+           default:false 
+        }
+    },
+    computed: {
+        mainDivClass() {
+            if(this.aside) {
+                return '9'
+            } else if (!this.aside && !this.half) {
+                return '12'
+            } else {
+                return '9'
+            }
         }
     }
 }

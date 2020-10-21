@@ -31,10 +31,10 @@
               <a class="nav-link" href="#">Electronics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Baby Toys</a>
+              <nuxt-link class="nav-link" to="/blog">Blog</nuxt-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Fitness sport</a>
+              <nuxt-link class="nav-link" to="/terms-of-use">Terms of use</nuxt-link>
             </li>
             <li class="nav-item dropdown">
               <a
