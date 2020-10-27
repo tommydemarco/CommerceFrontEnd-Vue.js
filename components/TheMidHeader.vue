@@ -55,11 +55,11 @@
 
 <style scoped lang="scss">
 @import '@/assets/scss/variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 
 .brand-wrap {
-  font-family: 'Norican', cursive;
-  font-size:35px;
+  font-family: 'Leckerli One', cursive;
+  font-size:30px;
   color: $dgrey;
 }
 .header-main {

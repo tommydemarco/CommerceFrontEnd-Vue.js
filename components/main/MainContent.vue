@@ -76,7 +76,7 @@ export default {
     display:block
 }
 header {
-    background: url('../../assets/images/header-background.jpeg')
+    background: url('../../assets/images/header-background.jpeg');
 }
 header {
     color:white!important;
