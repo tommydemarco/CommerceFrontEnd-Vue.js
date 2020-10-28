@@ -4,10 +4,9 @@
     pageSubtitle="discover the best products with amazing discounts"
     aside>
     <template #sidebar>
-
+      <sidebar-shop></sidebar-shop>
     </template>
     <template #content>
-      
     </template>
   </main-content>
 </template>

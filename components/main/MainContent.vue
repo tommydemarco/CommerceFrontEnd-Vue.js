@@ -58,12 +58,10 @@ export default {
     },
     computed: {
         mainDivClass() {
-            if(this.aside) {
+            if(this.aside || (!this.aside && !this.half)) {
                 return '9'
-            } else if (!this.aside && !this.half) {
-                return '12'
             } else {
-                return '9'
+                return '12'
             }
         }
     }

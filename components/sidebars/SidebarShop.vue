@@ -7,7 +7,7 @@
             <h6 class="title">Rating</h6>
           </a>
         </header>
-        <div class="filter-content collapse" id="collapse_aside1">
+        <div class="filter-content collapse show" id="collapse_aside1">
           <div class="card-body">
             <label class="custom-control custom-checkbox">
               <input type="checkbox" checked="" class="custom-control-input" />
@@ -108,7 +108,7 @@
             <h6 class="title">Rating</h6>
           </a>
         </header>
-        <div class="filter-content collapse" id="collapse_aside4">
+        <div class="filter-content collapse show" id="collapse_aside4">
           <div class="card-body">
             <label class="custom-control custom-checkbox">
               <input type="checkbox" checked="" class="custom-control-input" />
@@ -139,19 +139,12 @@
 
 <style scoped lang="scss">
 @import '@/assets/scss/variables.scss';
-header a {
-    color: $dgrey
-}
-header a:hover {
-    color: black
-}
-.card {
-    border-radius: 0px;
 
-    & header {
-        border-radius: 0px;
-        border-top: 3px solid $red;
-    }
-    
+.card-header a {
+  color:$dgrey;
+  &:hover {
+    color:$mgrey;
+  }
 }
+
 </style>

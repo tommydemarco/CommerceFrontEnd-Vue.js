@@ -8,12 +8,8 @@
 				</span>
 			</div>
 			<figcaption class="info-wrap">
-				<a href="#" class="title">Leather Sleeve - Macbook 13’’</a>
-				<div class="price mt-2">$3753.00</div> <!-- price-wrap.// -->
-				<ul class="buttons-ul pt-3">
-					<li><a href="#" class="btn btn-red">Buy on Amazon</a></li>
-					<li class="ml-2"><a href="#" class="btn btn-grey">Details</a></li>
-				</ul>
+				<h5 class="title">Leather Sleeve - Macbook 13’’</h5>
+				<div class="price mt-2">$3753.00</div>
 			</figcaption>
 		</figure>
 	</div>
@@ -21,24 +17,19 @@
 
 <style scoped lang="scss">
 @import '@/assets/scss/variables.scss';
-.card {
-	& .img-wrap {
-		border-top: 3px solid $red;
-		border-radius: 0px;
-	}
-	border-radius:0px;
-	& figcaption {
-		border-top: 3px solid $red;
-	}
-}
-.buttons-ul {
-	list-style-type: none;
-	padding-left:0px!important;
-	margin-bottom:0px;
-	& li {
-		list-style-type: none;
-		display:inline-block;
+
+.card-product-grid {
+	border: 1px solid $lgrey;
+	border-radius: 5px;
+	&:hover {
+		box-shadow: none;
+		border: 1px solid $red;
 	}
 }
+.title {
+	font-size:1.5rem!important;
+	font-weight:400;
+}
+
 
 </style>
